@@ -12,12 +12,13 @@
 		C713D9492570E5EB001C3AFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C713D9472570E5EB001C3AFC /* Main.storyboard */; };
 		C713D94B2570E5ED001C3AFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C713D94A2570E5ED001C3AFC /* Assets.xcassets */; };
 		C713D94E2570E5ED001C3AFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C713D94C2570E5ED001C3AFC /* LaunchScreen.storyboard */; };
-		D2270AAF28D8764F000B75CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C713D9452570E5EB001C3AFC /* ViewController.swift */; };
-		D2A4D07028D87A1900413231 /* CalcUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4D06F28D87A1900413231 /* CalcUnitTest.swift */; };
-		D2A4D07828D87A7000413231 /* CalculatorItemQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4D07728D87A7000413231 /* CalculatorItemQueue.swift */; };
-		D2A4D07928D87A7000413231 /* CalculatorItemQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4D07728D87A7000413231 /* CalculatorItemQueue.swift */; };
-		D2A4D09128D8AAE400413231 /* OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4D09028D8AAE400413231 /* OperationQueue.swift */; };
-		D2A4D09228D8AAE400413231 /* OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4D09028D8AAE400413231 /* OperationQueue.swift */; };
+		D2A4D09328D8BF0E00413231 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C713D9452570E5EB001C3AFC /* ViewController.swift */; };
+		D2A4D09728D8BFAA00413231 /* CalcUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4D06F28D87A1900413231 /* CalcUnitTest.swift */; };
+		D2A4D09828D8BFB900413231 /* OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4D09028D8AAE400413231 /* OperationQueue.swift */; };
+		D2A4D09928D8BFBD00413231 /* OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4D09028D8AAE400413231 /* OperationQueue.swift */; };
+		D2A4D09A28D8BFC400413231 /* CalculatorItemQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4D07728D87A7000413231 /* CalculatorItemQueue.swift */; };
+		D2A4D09D28D8C09E00413231 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C713D9452570E5EB001C3AFC /* ViewController.swift */; };
+		D2A4D0A028D8C23500413231 /* CalculatorItemQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4D07728D87A7000413231 /* CalculatorItemQueue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -221,10 +222,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2270AAF28D8764F000B75CC /* ViewController.swift in Sources */,
-				D2A4D09128D8AAE400413231 /* OperationQueue.swift in Sources */,
+				D2A4D09D28D8C09E00413231 /* ViewController.swift in Sources */,
+				D2A4D09A28D8BFC400413231 /* CalculatorItemQueue.swift in Sources */,
+				D2A4D09828D8BFB900413231 /* OperationQueue.swift in Sources */,
 				C713D9422570E5EB001C3AFC /* AppDelegate.swift in Sources */,
-				D2A4D07828D87A7000413231 /* CalculatorItemQueue.swift in Sources */,
 				C713D9442570E5EB001C3AFC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,9 +234,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2A4D07928D87A7000413231 /* CalculatorItemQueue.swift in Sources */,
-				D2A4D07028D87A1900413231 /* CalcUnitTest.swift in Sources */,
-				D2A4D09228D8AAE400413231 /* OperationQueue.swift in Sources */,
+				D2A4D09928D8BFBD00413231 /* OperationQueue.swift in Sources */,
+				D2A4D09728D8BFAA00413231 /* CalcUnitTest.swift in Sources */,
+				D2A4D0A028D8C23500413231 /* CalculatorItemQueue.swift in Sources */,
+				D2A4D09328D8BF0E00413231 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +308,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -368,6 +371,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

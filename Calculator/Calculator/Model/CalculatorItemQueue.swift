@@ -13,14 +13,15 @@ protocol CalculateItem {
 }
 
 struct CalculatorItemQueue: CalculateItem {
-    var baseNumber: Double
+
     var opreandList: [OperationQueue]
+
     
-    func calculateAllQueue() {
+    func calculateAllQueue(baseNumber: Double) -> Double {
         let value = opreandList.reduce(baseNumber, {(result: Double, element: OperationQueue) in
             element.operationFlag.calculate(result, element.oprationNumber)
         })
-        print("value: \(value)")
-    }    
+        return value
+    }
 }
 

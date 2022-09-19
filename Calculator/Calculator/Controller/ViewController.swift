@@ -11,10 +11,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let a = CalculatorItemQueue(baseNumber: 10, opreandList: [OperationQueue(oprationNumber: 10, operationFlag: .plus),
-                                                                  OperationQueue(oprationNumber: 5, operationFlag: .multifly),
-                                                                  OperationQueue(oprationNumber: 2, operationFlag: .minus)])
-        a.calculateAllQueue()
+        let a = CalculatorItemQueue(opreandList: [OperationQueue(oprationNumber: 10, operationFlag: .plus),
+                                                  OperationQueue(oprationNumber: 20, operationFlag: .divide),
+                                                  OperationQueue(oprationNumber: 30, operationFlag: .plus)])
+        a.calculateAllQueue(baseNumber: 10)
     }
 
 
