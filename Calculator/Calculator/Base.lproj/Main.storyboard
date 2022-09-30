@@ -123,7 +123,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="tappedNumberAndOperatorPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AhA-Lc-wy6"/>
+                                                    <action selector="tappedNumberPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QnE-tA-Urb"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgT-2D-A49">
@@ -134,7 +134,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="tappedNumberAndOperatorPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gVG-a6-TiF"/>
+                                                    <action selector="tappedNumberPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xaU-lL-Ayv"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcj-xJ-ruw">
@@ -145,7 +145,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="tappedNumberAndOperatorPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7iV-2N-Sd5"/>
+                                                    <action selector="tappedNumberPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ahb-uz-IWM"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="811-Pz-An6">
@@ -169,7 +169,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="tappedNumberAndOperatorPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J7l-OO-aA1"/>
+                                                    <action selector="tappedNumberPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ph1-Og-ulR"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpW-df-OLm">
@@ -180,7 +180,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="tappedNumberAndOperatorPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uNi-Fe-pE6"/>
+                                                    <action selector="tappedNumberPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YCg-nD-mBc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaY-Mw-CPv">
@@ -191,7 +191,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="tappedNumberAndOperatorPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2uc-be-GIe"/>
+                                                    <action selector="tappedNumberPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eeR-Tu-syU"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTe-Sn-Pvd">
@@ -215,7 +215,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="tappedNumberAndOperatorPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QVc-H4-TWp"/>
+                                                    <action selector="tappedNumberPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QIH-DJ-Nnq"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rif-2S-UU2">
@@ -226,7 +226,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="tappedNumberAndOperatorPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Utr-TQ-6mI"/>
+                                                    <action selector="tappedNumberPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oMx-p6-cfj"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8H-iH-tSd">
@@ -237,7 +237,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="tappedNumberAndOperatorPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rEH-Zq-Z2E"/>
+                                                    <action selector="tappedNumberPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4UV-pe-El2"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbh-wC-koF">
@@ -261,7 +261,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="tappedNumberAndOperatorPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rPC-4C-J36"/>
+                                                    <action selector="tappedNumberPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oUS-Uw-3Jy"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sH6-8l-kje">
@@ -272,7 +272,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="tappedNumberAndOperatorPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g3m-aP-48h"/>
+                                                    <action selector="tappedNumberPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ljl-Ct-FNX"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8q-5h-bnb">
@@ -338,8 +338,6 @@
                     </view>
                     <connections>
                         <outlet property="nowInputValue" destination="Lwz-OF-XHD" id="L0R-s5-cO8"/>
-                        <outlet property="numberPadZero" destination="mSz-Y3-r5Z" id="VhS-vI-gdh"/>
-                        <outlet property="numberPadZeroZero" destination="sH6-8l-kje" id="yOP-ZE-zFH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

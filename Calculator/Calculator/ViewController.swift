@@ -10,8 +10,6 @@ class ViewController: UIViewController {
     let defaultZeroValue = "0"
     var isEnabledTyping: Bool = false
     
-    @IBOutlet weak var numberPadZero: UIButton!
-    @IBOutlet weak var numberPadZeroZero: UIButton!
     @IBOutlet weak var nowInputValue: UILabel!
     
     override func viewDidLoad() {
@@ -26,8 +24,11 @@ class ViewController: UIViewController {
         if isEnabledTyping == true {
             checkNowInputValue.text! += button
         } else {
-            checkNowInputValue.text = button
-            isEnabledTyping = true
+            if button == "0" || button == "00" {
+            } else {
+                checkNowInputValue.text = button
+                isEnabledTyping = true
+            }
         }
     }
 }
