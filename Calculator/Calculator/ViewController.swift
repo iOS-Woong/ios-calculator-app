@@ -35,21 +35,30 @@ class ViewController: UIViewController {
         }
     }
 
-    
     @IBAction func tappedOperatorPad(_ sender: UIButton) {
         guard let optButton = sender.titleLabel?.text else { return }
         guard let checkNowInputNumber = nowInputNumber.text else { return }
-        guard let checkNowInputOperator = nowInputOperator.text else { return }
-        
-        nowInputOperator.text = optButton
         
         if nowInputNumber.text != "0" {
             makeLabel()
-            allComponentsForCalculation += (checkNowInputNumber + checkNowInputOperator)
+            nowInputOperator.text = optButton
+            allComponentsForCalculation += (checkNowInputNumber + optButton)
         }
-        
         resetNowInputNumber()
         setScrollToBottom()
+    }
+    
+    @IBAction func tappedEqualButton(_ sender: UIButton) {
+        guard let checkNowInputNumber = nowInputNumber.text else { return }
+        
+        makeLabel()
+        allComponentsForCalculation += (checkNowInputNumber)
+        
+        print(allComponentsForCalculation)
+        var calcResult = ExpressionParser.parse(from: allComponentsForCalculation)
+        
+        nowInputNumber.text = String(calcResult.result())
+        
     }
     
     private func makeLabel() {
