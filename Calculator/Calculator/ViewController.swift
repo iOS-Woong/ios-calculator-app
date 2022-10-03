@@ -7,28 +7,91 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let defaultZeroValue = "0"
     var isEnabledTyping: Bool = false
+    var allComponentsForCalculation: String = ""
     
-    @IBOutlet weak var nowInputValue: UILabel!
+    @IBOutlet weak var nowInputOperator: UILabel!
+    @IBOutlet weak var nowInputNumber: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var stackView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nowInputValue.text = defaultZeroValue
+        nowInputNumber.text = "0"
     }
         
     @IBAction func tappedNumberPad(_ sender: UIButton) {
-        guard let button = sender.titleLabel?.text else { return }
-        guard let checkNowInputValue = nowInputValue else { return }
+        guard let opdButton = sender.titleLabel?.text else { return }
+        guard let checkNowInputValue = nowInputNumber else { return }
         
         if isEnabledTyping == true {
-            checkNowInputValue.text! += button
+            checkNowInputValue.text! += opdButton
         } else {
-            if button == "0" || button == "00" {
+            if opdButton == "0" || opdButton == "00" {
             } else {
-                checkNowInputValue.text = button
+                checkNowInputValue.text = opdButton
                 isEnabledTyping = true
             }
         }
     }
+
+    
+    @IBAction func tappedOperatorPad(_ sender: UIButton) {
+        guard let optButton = sender.titleLabel?.text else { return }
+        guard let checkNowInputNumber = nowInputNumber.text else { return }
+        guard let checkNowInputOperator = nowInputOperator.text else { return }
+        
+        nowInputOperator.text = optButton
+        
+        if nowInputNumber.text != "0" {
+            makeLabel()
+            allComponentsForCalculation += (checkNowInputNumber + checkNowInputOperator)
+        }
+        
+        resetNowInputNumber()
+        setScrollToBottom()
+    }
+    
+    private func makeLabel() {
+        let opdLabel = UILabel()
+        opdLabel.font = UIFont.preferredFont(forTextStyle: .title3)
+        opdLabel.textColor = .white
+        opdLabel.isHidden = true
+        opdLabel.text = nowInputNumber.text
+        
+        let optLabel = UILabel()
+        optLabel.font = UIFont.preferredFont(forTextStyle: .title3)
+        optLabel.textColor = .white
+        optLabel.isHidden = true
+        optLabel.text = nowInputOperator.text
+        
+        let stack = UIStackView()
+        stack.spacing = 8
+        
+        if allComponentsForCalculation == "" {
+            stack.addArrangedSubview(opdLabel)
+        } else {
+            stack.addArrangedSubview(optLabel)
+            stack.addArrangedSubview(opdLabel)
+        }
+        
+        stackView.addArrangedSubview(stack)
+        
+        UIView.animate(withDuration: 0.3) {
+            optLabel.isHidden = false
+            opdLabel.isHidden = false
+        }
+    }
+    
+    private func setScrollToBottom() {
+        scrollView.setContentOffset(CGPoint(x: .zero, y: scrollView.contentSize.height - scrollView.bounds.height), animated: true)
+    }
+    
+    private func resetNowInputNumber() {
+        nowInputNumber.text = "0"
+        isEnabledTyping = false
+    }
+    
+    
+    
 }
