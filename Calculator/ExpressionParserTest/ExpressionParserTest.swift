@@ -23,7 +23,7 @@ class ExpressionParserTest: XCTestCase {
 
     func test_componentsByOperators_실행시_숫자값이배열로반환되는가() {
         // given
-        let input = "45+1-31*59/30"
+        let input = "45+1−31×59÷30"
         // when
         let result = ExpressionParser.componentsByOperators(from: input)
         // then
@@ -35,17 +35,17 @@ class ExpressionParserTest: XCTestCase {
     // m % 2 == 0 이면 양수 , m % 2 == 1 이면 음수 취급                 //
     func test_componentsByOperators_실행시_음수값넣었을때숫자값이배열로반환되는가() {
         // given
-        let input = "45-m3"
+        let input = "45−-3"
         // when
         let result = ExpressionParser.componentsByOperators(from: input)
         // then
-        XCTAssertEqual(result, ["45","m3"])
+        XCTAssertEqual(result, ["45","-3"])
     }
     
     
     func test_parse_호출시_formula_숫자는_정상반환되는가() {
         // given
-        let input = "44+33-13*18"
+        let input = "44+33−13×18"
         // when
         let inputParser = ExpressionParser.parse(from: input)
         // then

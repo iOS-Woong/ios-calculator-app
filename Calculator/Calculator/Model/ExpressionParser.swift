@@ -12,22 +12,22 @@ enum ExpressionParser {
         var formula: Formula = Formula()
         
         let operands = componentsByOperators(from: input)
-        let doubleOperands = operands.compactMap { str in Double(str)}
+        let doubleOperands = operands.compactMap { Double($0)}
         
-        doubleOperands.forEach { value in
-            formula.operands.enqueue(value)
+        doubleOperands.forEach {
+            formula.operands.enqueue($0)
         }
         
-        let operators = input.compactMap { str in Operator(rawValue: str) }
+        let operators = input.compactMap { Operator(rawValue: $0) }
         
-        operators.forEach { value in
-            formula.operators.enqueue(value)
+        operators.forEach {
+            formula.operators.enqueue($0)
         }
         return formula
     }
     
-    private static func componentsByOperators(from input: String) -> [String] {
-        let separatedToArray = input.components(separatedBy: ["+", "-", "*", "/"])
+    static func componentsByOperators(from input: String) -> [String] {
+        let separatedToArray = input.components(separatedBy: ["+", "−", "×", "÷"])
         let trimmingSpaceArray = separatedToArray.filter({$0 != ""})
         return trimmingSpaceArray
     }
