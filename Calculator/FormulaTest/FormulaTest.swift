@@ -94,4 +94,18 @@ class FormulaTest: XCTestCase {
     }
     
     
+    func test_result_호출시_subtract정상작동여부체크() {
+        //given
+        sut.operands.enqueue(10)
+        sut.operators.enqueue(.subtract)
+        sut.operands.enqueue(4)
+        
+        //when
+        let result = sut.result()
+        
+        //then
+        XCTAssertEqual(result, 6.0)
+    }
+    
+    
 }

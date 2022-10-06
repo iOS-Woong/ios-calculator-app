@@ -9,6 +9,7 @@ import UIKit
 class ViewController: UIViewController {
     var isEnabledTyping: Bool = false
     var allComponentsForCalculation: String = ""
+    let numberFormatter: NumberFormatter = NumberFormatter()
     
     @IBOutlet weak var nowInputOperator: UILabel!
     @IBOutlet weak var nowInputNumber: UILabel!
@@ -56,10 +57,17 @@ class ViewController: UIViewController {
         
         print(allComponentsForCalculation)
         var calcResult = ExpressionParser.parse(from: allComponentsForCalculation)
+        let doCalculate = calcResult.result()
         
-        nowInputNumber.text = String(calcResult.result())
-        
+        nowInputNumber.text = resultDoubleToString(result: doCalculate)
     }
+    
+    private func resultDoubleToString(result: Double) -> String {
+        guard let formattedString = numberFormatter.string(for: result) else { return "" }
+        return formattedString
+    }
+    
+    
     
     private func makeLabel() {
         let opdLabel = UILabel()
