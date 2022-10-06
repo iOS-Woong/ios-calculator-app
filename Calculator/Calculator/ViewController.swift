@@ -62,6 +62,14 @@ class ViewController: UIViewController {
         nowInputNumber.text = resultDoubleToString(result: doCalculate)
     }
     
+    @IBAction func tappedACButton(_ sender: UIButton) {
+        nowInputNumber.text = ""
+        nowInputOperator.text = ""
+        allComponentsForCalculation = ""
+        removeLabel()
+    }
+    
+    
     private func resultDoubleToString(result: Double) -> String {
         guard let formattedString = numberFormatter.string(for: result) else { return "" }
         return formattedString
@@ -97,6 +105,12 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 0.3) {
             optLabel.isHidden = false
             opdLabel.isHidden = false
+        }
+    }
+    
+    private func removeLabel() {
+        stackView.subviews.forEach {
+            ($0).removeFromSuperview()
         }
     }
     
