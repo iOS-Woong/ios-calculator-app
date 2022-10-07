@@ -69,6 +69,10 @@ class ViewController: UIViewController {
         removeLabel()
     }
     
+    @IBAction func tappedCEButton(_ sender: UIButton) {
+        nowInputNumber.text = "0"
+        isEnabledTyping = false
+    }
     
     private func resultDoubleToString(result: Double) -> String {
         guard let formattedString = numberFormatter.string(for: result) else { return "" }
