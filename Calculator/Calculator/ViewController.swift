@@ -74,6 +74,18 @@ class ViewController: UIViewController {
         isEnabledTyping = false
     }
     
+    @IBAction func tappedSignChangeButton(_ sender: UIButton) {
+        guard let checkNowInputNumber = nowInputNumber.text else { return }
+        
+        if checkNowInputNumber == "0" {
+        } else if checkNowInputNumber.contains("-") != true {
+            nowInputNumber.text = "-" + checkNowInputNumber
+        } else {
+            nowInputNumber.text?.removeFirst()
+        }
+    }
+    
+    
     private func resultDoubleToString(result: Double) -> String {
         guard let formattedString = numberFormatter.string(for: result) else { return "" }
         return formattedString
