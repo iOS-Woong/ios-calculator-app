@@ -28,13 +28,24 @@ class ViewController: UIViewController {
         if isEnabledTyping == true {
             checkNowInputValue.text! += opdButton
         } else {
-            if opdButton == "0" || opdButton == "00" {
+            if opdButton == "0" {
             } else {
                 checkNowInputValue.text = opdButton
                 isEnabledTyping = true
             }
         }
     }
+    
+    @IBAction func tappedDoubleZeroButton(_ sender: UIButton) {
+        
+        if nowInputNumber.text == "" {
+            return
+        } else if nowInputNumber.text != "0" {
+            nowInputNumber.text! += "00"
+        }
+    }
+    
+    
 
     @IBAction func tappedOperatorPad(_ sender: UIButton) {
         guard let optButton = sender.titleLabel?.text else { return }
