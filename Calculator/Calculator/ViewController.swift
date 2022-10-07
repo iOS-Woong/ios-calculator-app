@@ -45,6 +45,14 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func tappedDotButton(_ sender: UIButton) {
+        if nowInputNumber.text == "0" {
+            nowInputNumber.text = "0" + "."
+            isEnabledTyping = true
+        } else {
+            nowInputNumber.text = nowInputNumber.text! + "."
+        }
+    }
     
 
     @IBAction func tappedOperatorPad(_ sender: UIButton) {
